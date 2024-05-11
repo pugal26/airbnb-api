@@ -25,7 +25,7 @@
  app.use('/uploads', express.static(__dirname+'/uploads'));
  app.use(cors({
    credentials: true,
-   origin:'http://localhost:5173',
+   origin:'https://airbnb-caps.netlify.app/',
  }));
 
  mongoose.connect('mongodb+srv://booking:MSKT7mWc9iKUCDFH@cluster0.sgf6cvw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
