@@ -23,11 +23,11 @@
  app.use(express.json());
  app.use(cookieParser());
  app.use('/uploads', express.static(__dirname+'/uploads'));
- app.use(cors({
-   credentials: true,
-   origin:'https://airbnb-caps.netlify.app/',
-   'Access-Control-Allow-Origin': '*'
- }));
+ app.use(cors());
+
+//  credentials: true,
+//    origin:'https://airbnb-caps.netlify.app/',
+//    'Access-Control-Allow-Origin': '*'
 
  mongoose.connect('mongodb+srv://booking:MSKT7mWc9iKUCDFH@cluster0.sgf6cvw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
