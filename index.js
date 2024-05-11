@@ -26,6 +26,7 @@
  app.use(cors({
    credentials: true,
    origin:'https://airbnb-caps.netlify.app/',
+   'Access-Control-Allow-Origin': '*'
  }));
 
  mongoose.connect('mongodb+srv://booking:MSKT7mWc9iKUCDFH@cluster0.sgf6cvw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
